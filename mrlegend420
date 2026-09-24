@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MR LEGEND (MLG)</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: black;
+}
+
+/* Animated black/white background */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #000, #111, #fff, #000);
+  background-size: 400% 400%;
+  animation: move 10s infinite linear;
+  z-index: -2;
+}
+
+@keyframes move {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Overlay noise */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: -1;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: linear-gradient(white, #999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* PFP section */
+.pfps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pfps img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.pfps img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px white;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<header>
+  <h1>MR LEGEND</h1>
+  <p>MLG TOKEN — BUILDING THE FUTURE OF WEB3</p>
+</header>
+
+<!-- PFP AVATARS (VIBE STYLE WEB3 GENERATED) -->
+<div class="pfps">
+  <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=MLG1" />
+  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=MLG2" />
+  <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=MLG3" />
+</div>
+
+<!-- LINKS -->
+<div class="buttons">
+  <a class="btn" href="https://x.com/mrlegend420" target="_blank">Twitter</a>
+  <a class="btn" href="https://discord.gg/efE7kqgXve" target="_blank">Telegram / Discord</a>
+  <a class="btn" href="https://testnet.vibevibe.fun/token/0x2f8EF4a7Bc37cBd49d747e18e330aD757Dc66411" target="_blank">Buy Token</a>
+</div>
+
+<footer>
+  © 2026 MR LEGEND (MLG) — All Rights Reserved
+</footer>
+
+</body>
+</html>
